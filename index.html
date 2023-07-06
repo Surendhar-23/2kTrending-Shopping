@@ -14,29 +14,115 @@
           <div class="logo">
             <img src="img/logo.png" alt="logo" />
           </div>
-          <ul class="nav_link">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Account</a></li>
-            <li class="cartcontainer">
-              <img src="img/cart.png" alt="cart" class="cartimg" />
-            </li>
-          </ul>
+          <div class="nav_link">
+            <ul class="nav_links" id="navlink">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+            <div class="cartmenu">
+              <div class="cartcontainer">
+                <img src="img/cart.png" alt="cart" class="cartimg" />
+              </div>
+              <div class="menu" id="menubutton" onclick="shownav()">
+                <img src="img/menu.png" alt="" />
+              </div>
+            </div>
+          </div>
         </nav>
         <div class="sub-section">
           <div class="maintext">
-            <h1>Give Your Workout A New Style!</h1>
+            <h1>Give Your Workout <br />A New Style!</h1>
             <p>
               Success isn't always about greatness. It's about consistency.
-              Consistent hard work gains success. Greatness will come.
+              Consistent<br />
+              hard work gains success. Greatness will come.
             </p>
-            <a href="#">Explore Now &RightArrow;</a>
+            <a href="#" class="btn">Explore Now &RightArrow;</a>
           </div>
           <div class="mainimg"><img src="img/image1.png" alt="" /></div>
         </div>
       </div>
     </section>
+    <div class="subcontainer">
+      <article class="category">
+        <div class="category-container">
+          <img src="img/category-1.jpg" alt="CategoryImage1" />
+          <img src="img/category-2.jpg" alt="CategoryImage2" />
+          <img src="img/category-3.jpg" alt="CategoryImage3" />
+        </div>
+      </article>
+      <figure class="featuredproducts">
+        <h1>Featured Products</h1>
+        <div class="featuredimages category-container">
+          <div class="imgs">
+            <img src="img/product-1.jpg" alt="product-1" />
+            <p class="title">Red Printed T-Shirt</p>
+            <div class="rating">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+
+            <p class="price">$50.00</p>
+          </div>
+          <div class="imgs">
+            <img src="img/product-2.jpg" alt="product-2" />
+            <p class="title">Red Printed T-Shirt</p>
+            <div class="rating">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+
+            <p class="price">$75.00</p>
+          </div>
+          <div class="imgs">
+            <img src="img/product-3.jpg" alt="product-3" />
+            <p class="title">Red Printed T-Shirt</p>
+            <div class="rating">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+
+            <p class="price">$45.00</p>
+          </div>
+          <div class="imgs">
+            <img src="img/product-4.jpg" alt="product-4" />
+            <p class="title">Red Printed T-Shirt</p>
+            <div class="rating">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+
+            <p class="price">$55.00</p>
+          </div>
+        </div>
+      </figure>
+    </div>
+    <script>
+      var menubtn = document.getElementById("menubutton");
+      var nav = document.getElementById("navlink");
+
+      function shownav() {
+        if (nav.style.height == "0px") {
+          nav.style.height = "200px";
+        } else {
+          nav.style.height = "0px";
+        }
+      }
+    </script>
   </body>
 </html>
