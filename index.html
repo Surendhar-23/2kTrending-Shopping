@@ -6,6 +6,10 @@
     <title>2kTrending | Shopping Zone</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/app-store.png" />
+    <script
+      src="https://kit.fontawesome.com/50db1e3dba.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section class="main-section">
@@ -46,76 +50,85 @@
         </div>
       </div>
     </section>
-    <div class="subcontainer">
-      <article class="category">
-        <div class="category-container">
-          <img src="img/category-1.jpg" alt="CategoryImage1" />
-          <img src="img/category-2.jpg" alt="CategoryImage2" />
-          <img src="img/category-3.jpg" alt="CategoryImage3" />
+
+    <article class="category">
+      <div class="sub-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="img/category-1.jpg" alt="CategoryImage1" />
+          </div>
+          <div class="col-3">
+            <img src="img/category-2.jpg" alt="CategoryImage2" />
+          </div>
+          <div class="col-3">
+            <img src="img/category-3.jpg" alt="CategoryImage3" />
+          </div>
         </div>
-      </article>
-      <figure class="featuredproducts">
-        <h1>Featured Products</h1>
-        <div class="featuredimages category-container">
-          <div class="imgs">
+      </div>
+    </article>
+
+    <figure class="featuredproducts">
+      <h1>Featured Products</h1>
+      <div class="sub-container">
+        <div class="row">
+          <div class="col-4">
             <img src="img/product-1.jpg" alt="product-1" />
             <p class="title">Red Printed T-Shirt</p>
             <div class="rating">
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
             </div>
 
             <p class="price">$50.00</p>
           </div>
-          <div class="imgs">
+          <div class="col-4">
             <img src="img/product-2.jpg" alt="product-2" />
             <p class="title">Red Printed T-Shirt</p>
             <div class="rating">
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
             </div>
 
             <p class="price">$75.00</p>
           </div>
-          <div class="imgs">
+          <div class="col-4">
             <img src="img/product-3.jpg" alt="product-3" />
             <p class="title">Red Printed T-Shirt</p>
             <div class="rating">
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
             </div>
-
             <p class="price">$45.00</p>
           </div>
-          <div class="imgs">
+          <div class="col-4">
             <img src="img/product-4.jpg" alt="product-4" />
             <p class="title">Red Printed T-Shirt</p>
             <div class="rating">
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
             </div>
-
             <p class="price">$55.00</p>
           </div>
         </div>
-      </figure>
-    </div>
+      </div>
+    </figure>
+
     <script>
       var menubtn = document.getElementById("menubutton");
       var nav = document.getElementById("navlink");
-
+      nav.style.height = "0px";
       function shownav() {
         if (nav.style.height == "0px") {
           nav.style.height = "200px";
